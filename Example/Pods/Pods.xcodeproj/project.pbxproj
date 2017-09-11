@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06DA747F548BAC280AA8CF40478FEAAC /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EF33F9CCD964D77CD4793AF6724B6D /* ReplaceMe.m */; };
+		1798FF04952A2B27439C880A37B8275A /* Pods-CLoadDataController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F716D9308043306CC4991750863B5D46 /* Pods-CLoadDataController_Tests-dummy.m */; };
+		4E057D27E8D9903F746253175F68FF2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		775D41CF3C4476F8CEF0A09AD0A4F1A8 /* CLoadDataController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC033582A45F3AC61B3E35518C0E0F0C /* CLoadDataController-dummy.m */; };
+		A4AB073C8657D993E3BB254F4A220F20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B9ADFD02F6A8C3908884F9D64D71A5E2 /* Pods-CLoadDataController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D672A1B7ECF8CC64E811AF1F4234CB /* Pods-CLoadDataController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C855A92FDD59BBD2EE82CB3A95508C4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CD2A27E206C6CB28D4A03A09666BD1A0 /* Pods-CLoadDataController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 085E4E1B1DDF0805C7E6304A26B6E4CE /* Pods-CLoadDataController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E56553D8DF33C3F7CE2F5FA443B4EDD4 /* CLoadDataController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D6DA3B2849BE63BFF4AB63BFD37486 /* CLoadDataController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD4EE36CF7F3122AA2AAF8321129F4C0 /* Pods-CLoadDataController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F254BBCE101579E5ACBB7396981CD0D /* Pods-CLoadDataController_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA918525F407C8CAE1D092EC1E52AE7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F82BAFC41B842456E65BA27B92AB431;
+			remoteInfo = CLoadDataController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		085E4E1B1DDF0805C7E6304A26B6E4CE /* Pods-CLoadDataController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CLoadDataController_Example-umbrella.h"; sourceTree = "<group>"; };
+		08D82672283026841ED29A297E1ECB3A /* Pods-CLoadDataController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CLoadDataController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0F31695D7B7DC01A0E501E2240018D76 /* Pods-CLoadDataController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CLoadDataController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		10F712F7648AECC772D96DDBDF8764A0 /* CLoadDataController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CLoadDataController.modulemap; sourceTree = "<group>"; };
+		187CC7E8F8771BA60F24221623A424D9 /* CLoadDataController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLoadDataController-prefix.pch"; sourceTree = "<group>"; };
+		22D672A1B7ECF8CC64E811AF1F4234CB /* Pods-CLoadDataController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CLoadDataController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2E5E7A1FEE0B1831ABA04D2577930C9C /* Pods-CLoadDataController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLoadDataController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3E893C08587C67276460E30BA4FCAEFC /* Pods-CLoadDataController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CLoadDataController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		40F39EE5A76E8AED50E16F60BBEC6B77 /* Pods-CLoadDataController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CLoadDataController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		45EF33F9CCD964D77CD4793AF6724B6D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		4B1456EF5A86871DA83FB57B40AFA83A /* Pods_CLoadDataController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CLoadDataController_Example.framework; path = "Pods-CLoadDataController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAE1EADF9440A27582956F708C0CB4A /* Pods-CLoadDataController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLoadDataController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		62E021C9CE2B7D3654519CF30DCEB805 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6C76FA4D6067BCD55297310DC89FFD9E /* CLoadDataController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CLoadDataController.xcconfig; sourceTree = "<group>"; };
+		6E0A4136613A030B26A4C87C4AF83C2A /* Pods-CLoadDataController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLoadDataController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6F254BBCE101579E5ACBB7396981CD0D /* Pods-CLoadDataController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CLoadDataController_Example-dummy.m"; sourceTree = "<group>"; };
+		7390E22DF498108B92CD2A27BCD7D00B /* Pods-CLoadDataController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CLoadDataController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		73B77CCD8BF7128ADDEDD144806228B5 /* Pods-CLoadDataController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CLoadDataController_Tests.modulemap"; sourceTree = "<group>"; };
+		76D6DA3B2849BE63BFF4AB63BFD37486 /* CLoadDataController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CLoadDataController-umbrella.h"; sourceTree = "<group>"; };
+		82ED5AD61228BBDB7A08C2CC7435F7B1 /* Pods-CLoadDataController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CLoadDataController_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96FFF88482CC91A31880F535F17798D4 /* Pods-CLoadDataController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CLoadDataController_Example-resources.sh"; sourceTree = "<group>"; };
+		A3A40FC00672230E4B8595958E695B05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A707CCE81985137DE26DC76B4D7F4874 /* CLoadDataController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CLoadDataController.framework; path = CLoadDataController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4268AD03A73B2465E40DA11ED01397D /* Pods-CLoadDataController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CLoadDataController_Tests-resources.sh"; sourceTree = "<group>"; };
+		B888D5C254A131B3188AD34FB34EE28C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC033582A45F3AC61B3E35518C0E0F0C /* CLoadDataController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CLoadDataController-dummy.m"; sourceTree = "<group>"; };
+		C2FDA09C0EB3B264A96F2A11F93343E7 /* Pods-CLoadDataController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLoadDataController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E41E6CC6D83C626CF2B643CBD8C6CEB1 /* Pods-CLoadDataController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLoadDataController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E51369B3D38FB5F1D5A8C5ADBC01A173 /* Pods_CLoadDataController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CLoadDataController_Tests.framework; path = "Pods-CLoadDataController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F716D9308043306CC4991750863B5D46 /* Pods-CLoadDataController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CLoadDataController_Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D804D0374D825FABF16998350F0023B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AB073C8657D993E3BB254F4A220F20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C955AF7161B06CA34EEF0D637939DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C855A92FDD59BBD2EE82CB3A95508C4D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC2B6DA724CC4AF2FE9C6DBF82230E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E057D27E8D9903F746253175F68FF2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E9FBF7ECB15493DCF2FAFA63C8479C3 /* Pods-CLoadDataController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B888D5C254A131B3188AD34FB34EE28C /* Info.plist */,
+				73B77CCD8BF7128ADDEDD144806228B5 /* Pods-CLoadDataController_Tests.modulemap */,
+				08D82672283026841ED29A297E1ECB3A /* Pods-CLoadDataController_Tests-acknowledgements.markdown */,
+				6E0A4136613A030B26A4C87C4AF83C2A /* Pods-CLoadDataController_Tests-acknowledgements.plist */,
+				F716D9308043306CC4991750863B5D46 /* Pods-CLoadDataController_Tests-dummy.m */,
+				0F31695D7B7DC01A0E501E2240018D76 /* Pods-CLoadDataController_Tests-frameworks.sh */,
+				B4268AD03A73B2465E40DA11ED01397D /* Pods-CLoadDataController_Tests-resources.sh */,
+				22D672A1B7ECF8CC64E811AF1F4234CB /* Pods-CLoadDataController_Tests-umbrella.h */,
+				C2FDA09C0EB3B264A96F2A11F93343E7 /* Pods-CLoadDataController_Tests.debug.xcconfig */,
+				E41E6CC6D83C626CF2B643CBD8C6CEB1 /* Pods-CLoadDataController_Tests.release.xcconfig */,
+			);
+			name = "Pods-CLoadDataController_Tests";
+			path = "Target Support Files/Pods-CLoadDataController_Tests";
+			sourceTree = "<group>";
+		};
+		15F56586241F9E424E8AC84C1AAAA62F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A57FA9FD10137077B9CE70E87D919735 /* CLoadDataController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3F6E30514047CBB821FCD2BF7F33BED1 /* CLoadDataController */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F7777E87DAF262647E107229A2643 /* Classes */,
+			);
+			name = CLoadDataController;
+			path = CLoadDataController;
+			sourceTree = "<group>";
+		};
+		43E35B7B6F19740072977EE3823EF9FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10F712F7648AECC772D96DDBDF8764A0 /* CLoadDataController.modulemap */,
+				6C76FA4D6067BCD55297310DC89FFD9E /* CLoadDataController.xcconfig */,
+				BC033582A45F3AC61B3E35518C0E0F0C /* CLoadDataController-dummy.m */,
+				187CC7E8F8771BA60F24221623A424D9 /* CLoadDataController-prefix.pch */,
+				76D6DA3B2849BE63BFF4AB63BFD37486 /* CLoadDataController-umbrella.h */,
+				62E021C9CE2B7D3654519CF30DCEB805 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CLoadDataController";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				15F56586241F9E424E8AC84C1AAAA62F /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				ED2020F44962C476D9F511AFB759866C /* Products */,
+				FF2E5BA4BFAEE744E5A3C7BDA6C32499 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A57FA9FD10137077B9CE70E87D919735 /* CLoadDataController */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E30514047CBB821FCD2BF7F33BED1 /* CLoadDataController */,
+				43E35B7B6F19740072977EE3823EF9FA /* Support Files */,
+			);
+			name = CLoadDataController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AF2F7777E87DAF262647E107229A2643 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				45EF33F9CCD964D77CD4793AF6724B6D /* ReplaceMe.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD1DC35C12FF7C9784C4AA58551BA383 /* Pods-CLoadDataController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A3A40FC00672230E4B8595958E695B05 /* Info.plist */,
+				82ED5AD61228BBDB7A08C2CC7435F7B1 /* Pods-CLoadDataController_Example.modulemap */,
+				40F39EE5A76E8AED50E16F60BBEC6B77 /* Pods-CLoadDataController_Example-acknowledgements.markdown */,
+				7390E22DF498108B92CD2A27BCD7D00B /* Pods-CLoadDataController_Example-acknowledgements.plist */,
+				6F254BBCE101579E5ACBB7396981CD0D /* Pods-CLoadDataController_Example-dummy.m */,
+				3E893C08587C67276460E30BA4FCAEFC /* Pods-CLoadDataController_Example-frameworks.sh */,
+				96FFF88482CC91A31880F535F17798D4 /* Pods-CLoadDataController_Example-resources.sh */,
+				085E4E1B1DDF0805C7E6304A26B6E4CE /* Pods-CLoadDataController_Example-umbrella.h */,
+				2E5E7A1FEE0B1831ABA04D2577930C9C /* Pods-CLoadDataController_Example.debug.xcconfig */,
+				4FAE1EADF9440A27582956F708C0CB4A /* Pods-CLoadDataController_Example.release.xcconfig */,
+			);
+			name = "Pods-CLoadDataController_Example";
+			path = "Target Support Files/Pods-CLoadDataController_Example";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		ED2020F44962C476D9F511AFB759866C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A707CCE81985137DE26DC76B4D7F4874 /* CLoadDataController.framework */,
+				4B1456EF5A86871DA83FB57B40AFA83A /* Pods_CLoadDataController_Example.framework */,
+				E51369B3D38FB5F1D5A8C5ADBC01A173 /* Pods_CLoadDataController_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF2E5BA4BFAEE744E5A3C7BDA6C32499 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD1DC35C12FF7C9784C4AA58551BA383 /* Pods-CLoadDataController_Example */,
+				0E9FBF7ECB15493DCF2FAFA63C8479C3 /* Pods-CLoadDataController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D61DC6C6AF95C836523D4F7ECF8F392 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2A27E206C6CB28D4A03A09666BD1A0 /* Pods-CLoadDataController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D5CEBBDF51783FF79992D05A744D91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E56553D8DF33C3F7CE2F5FA443B4EDD4 /* CLoadDataController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56BA4C511C1D2DC3CCD6502C197983C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9ADFD02F6A8C3908884F9D64D71A5E2 /* Pods-CLoadDataController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3F82BAFC41B842456E65BA27B92AB431 /* CLoadDataController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5A90F4B60BEDC3B8E6E8F0973E5487 /* Build configuration list for PBXNativeTarget "CLoadDataController" */;
+			buildPhases = (
+				0B99F48269F960672FB3FA398BC20BEF /* Sources */,
+				CC2B6DA724CC4AF2FE9C6DBF82230E22 /* Frameworks */,
+				78D5CEBBDF51783FF79992D05A744D91 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLoadDataController;
+			productName = CLoadDataController;
+			productReference = A707CCE81985137DE26DC76B4D7F4874 /* CLoadDataController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE2ECD3AEE7D079752FED69A451201C4 /* Pods-CLoadDataController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956B19B482E550B47415D327B996B975 /* Build configuration list for PBXNativeTarget "Pods-CLoadDataController_Tests" */;
+			buildPhases = (
+				9568A30DB3879232B2767C76CDC11228 /* Sources */,
+				0D804D0374D825FABF16998350F0023B /* Frameworks */,
+				D56BA4C511C1D2DC3CCD6502C197983C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CLoadDataController_Tests";
+			productName = "Pods-CLoadDataController_Tests";
+			productReference = E51369B3D38FB5F1D5A8C5ADBC01A173 /* Pods_CLoadDataController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD672C5382D5A696B2BA48520AA22080 /* Pods-CLoadDataController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E0255957B5CD0289BE182EFC6F35A2A /* Build configuration list for PBXNativeTarget "Pods-CLoadDataController_Example" */;
+			buildPhases = (
+				749188383D1AFE25E41CDB0302D96CAA /* Sources */,
+				1C955AF7161B06CA34EEF0D637939DE9 /* Frameworks */,
+				5D61DC6C6AF95C836523D4F7ECF8F392 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E810FADF1964F889A88E18F94BD8945A /* PBXTargetDependency */,
+			);
+			name = "Pods-CLoadDataController_Example";
+			productName = "Pods-CLoadDataController_Example";
+			productReference = 4B1456EF5A86871DA83FB57B40AFA83A /* Pods_CLoadDataController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = ED2020F44962C476D9F511AFB759866C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F82BAFC41B842456E65BA27B92AB431 /* CLoadDataController */,
+				FD672C5382D5A696B2BA48520AA22080 /* Pods-CLoadDataController_Example */,
+				BE2ECD3AEE7D079752FED69A451201C4 /* Pods-CLoadDataController_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B99F48269F960672FB3FA398BC20BEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775D41CF3C4476F8CEF0A09AD0A4F1A8 /* CLoadDataController-dummy.m in Sources */,
+				06DA747F548BAC280AA8CF40478FEAAC /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749188383D1AFE25E41CDB0302D96CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4EE36CF7F3122AA2AAF8321129F4C0 /* Pods-CLoadDataController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9568A30DB3879232B2767C76CDC11228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1798FF04952A2B27439C880A37B8275A /* Pods-CLoadDataController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E810FADF1964F889A88E18F94BD8945A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CLoadDataController;
+			target = 3F82BAFC41B842456E65BA27B92AB431 /* CLoadDataController */;
+			targetProxy = AA918525F407C8CAE1D092EC1E52AE7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		44422AAF6D77FE35068F6CB7E5DE182E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2FDA09C0EB3B264A96F2A11F93343E7 /* Pods-CLoadDataController_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CLoadDataController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CLoadDataController_Tests/Pods-CLoadDataController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CLoadDataController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4C43E8C789D5DF7CC8176187E1D9F037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C76FA4D6067BCD55297310DC89FFD9E /* CLoadDataController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CLoadDataController/CLoadDataController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CLoadDataController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CLoadDataController/CLoadDataController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CLoadDataController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AEAAB1E525E11D6D2CAFEE7E910769F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E41E6CC6D83C626CF2B643CBD8C6CEB1 /* Pods-CLoadDataController_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CLoadDataController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CLoadDataController_Tests/Pods-CLoadDataController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CLoadDataController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B33C4996DBE0A2F957C27FA9655A5A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FAE1EADF9440A27582956F708C0CB4A /* Pods-CLoadDataController_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CLoadDataController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CLoadDataController_Example/Pods-CLoadDataController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CLoadDataController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A27CE1633AA296D83876584F9F7779F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C76FA4D6067BCD55297310DC89FFD9E /* CLoadDataController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CLoadDataController/CLoadDataController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CLoadDataController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CLoadDataController/CLoadDataController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CLoadDataController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E552C2289B35183D037D11470446A7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E5E7A1FEE0B1831ABA04D2577930C9C /* Pods-CLoadDataController_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CLoadDataController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CLoadDataController_Example/Pods-CLoadDataController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CLoadDataController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E0255957B5CD0289BE182EFC6F35A2A /* Build configuration list for PBXNativeTarget "Pods-CLoadDataController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E552C2289B35183D037D11470446A7B5 /* Debug */,
+				9B33C4996DBE0A2F957C27FA9655A5A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		956B19B482E550B47415D327B996B975 /* Build configuration list for PBXNativeTarget "Pods-CLoadDataController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44422AAF6D77FE35068F6CB7E5DE182E /* Debug */,
+				8AEAAB1E525E11D6D2CAFEE7E910769F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5A90F4B60BEDC3B8E6E8F0973E5487 /* Build configuration list for PBXNativeTarget "CLoadDataController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C43E8C789D5DF7CC8176187E1D9F037 /* Debug */,
+				A27CE1633AA296D83876584F9F7779F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

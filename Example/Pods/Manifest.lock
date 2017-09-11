@@ -1,0 +1,16 @@
+PODS:
+  - CLoadDataController (0.1.0)
+
+DEPENDENCIES:
+  - CLoadDataController (from `../`)
+
+EXTERNAL SOURCES:
+  CLoadDataController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CLoadDataController: b1ce617c891292cd8c1b539ec54199a97a755e8e
+
+PODFILE CHECKSUM: 0ddea94b59821e1fa1d035fffe8fc458da7bd762
+
+COCOAPODS: 1.2.1

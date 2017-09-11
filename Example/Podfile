@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CLoadDataController_Example' do
+  pod 'CLoadDataController', :path => '../'
+
+  target 'CLoadDataController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
