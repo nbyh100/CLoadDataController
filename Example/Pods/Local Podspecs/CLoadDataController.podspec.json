@@ -2,7 +2,7 @@
   "name": "CLoadDataController",
   "version": "0.1.0",
   "summary": "A short description of CLoadDataController.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "This is a long description, is longer than the short description.",
   "homepage": "https://github.com/nbyh100@sina.com/CLoadDataController",
   "license": {
     "type": "MIT",
@@ -18,5 +18,14 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CLoadDataController/Classes/**/*"
+  "source_files": "CLoadDataController/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "PromiseKit/Promise": [
+      "1.7.2"
+    ],
+    "MJRefresh": [
+      "3.1.12"
+    ]
+  }
 }

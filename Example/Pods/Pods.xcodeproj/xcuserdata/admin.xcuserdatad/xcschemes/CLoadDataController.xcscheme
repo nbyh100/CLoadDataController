@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3F82BAFC41B842456E65BA27B92AB431'
+               BlueprintIdentifier = '26A53B0FBBD9BC8DDA4A4BCD09E24AD0'
                BlueprintName = 'CLoadDataController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'CLoadDataController.framework'>

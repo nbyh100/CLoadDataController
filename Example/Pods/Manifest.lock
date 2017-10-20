@@ -1,5 +1,9 @@
 PODS:
-  - CLoadDataController (0.1.0)
+  - CLoadDataController (0.1.0):
+    - MJRefresh (= 3.1.12)
+    - PromiseKit/Promise (= 1.7.2)
+  - MJRefresh (3.1.12)
+  - PromiseKit/Promise (1.7.2)
 
 DEPENDENCIES:
   - CLoadDataController (from `../`)
@@ -9,8 +13,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CLoadDataController: b1ce617c891292cd8c1b539ec54199a97a755e8e
+  CLoadDataController: 7bf87838edb13a261798033355d86ed559e2a1ae
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PromiseKit: 102844c7b5ccff53f693e0710365c445d8df3871
 
-PODFILE CHECKSUM: 0ddea94b59821e1fa1d035fffe8fc458da7bd762
+PODFILE CHECKSUM: 5b73fb76be1cb63ae21cf8d102ace90b287ae444
 
 COCOAPODS: 1.2.1

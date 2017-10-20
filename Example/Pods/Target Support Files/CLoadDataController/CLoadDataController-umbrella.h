@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "CAutoScrollView.h"
+#import "CLoadDataController.h"
 
 FOUNDATION_EXPORT double CLoadDataControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char CLoadDataControllerVersionString[];

@@ -1,11 +1,7 @@
+platform :ios, "8.0"
 use_frameworks!
+inhibit_all_warnings!
 
 target 'CLoadDataController_Example' do
   pod 'CLoadDataController', :path => '../'
-
-  target 'CLoadDataController_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
