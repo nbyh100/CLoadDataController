@@ -5,8 +5,6 @@
 //  Created by 张九州 on 2017/9/11.
 //
 
-#import <MJRefresh/MJRefreshNormalHeader.h>
-#import <MJRefresh/MJRefreshBackNormalFooter.h>
 #import "CAutoScrollView.h"
 
 @interface CEmptyDataView : UIView <CEmptyDataViewProtocol>
@@ -50,13 +48,44 @@
 
 @end
 
+@implementation CAutoScrollViewOptions
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.pageSize = 10;
+        self.emptyText = @"暂无内容";
+        self.getErrorText = ^NSString *(NSError *error) {
+            return @"加载遇到问题，请稍后重试";
+        };
+    }
+    return self;
+}
+
+@end
+
 @interface CAutoScrollView () <CLoadDataControllerDelegate>
 
+@property (nonatomic, strong) CLoadDataController *loadDataController;
 @property (nonatomic, weak) UIScrollView *scrollView;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;
-@property (nonatomic, strong) CEmptyDataView *emptyDataView;
-@property (nonatomic, strong) CLoadDataController *loadDataController;
 @property (nonatomic, assign) BOOL *haveMoreData;
+
+@property (nonatomic, strong) MJRefreshHeader* (^getRefreshHeader)(void (^refreshingBlock)(void));
+@property (nonatomic, strong) MJRefreshFooter* (^getRefreshFooter)(void (^refreshingBlock)(void));
+@property (nonatomic, assign) int pageSize;
+@property (nonatomic, strong) NSString *emptyText;
+@property (nonatomic, strong) NSString* (^getErrorText)(NSError *error);
+@property (nonatomic, strong) UIView<CEmptyDataViewProtocol> *emptyDataView;
+@property (nonatomic, strong) CLoadDataHandler* (^loadData)(
+    CLoadDataCompleteBlock complete,
+    CLoadDataMode mode,
+    int pageNumber,
+    int pageSize
+);
+@property (nonatomic, strong) void (^loadSuccess)(CLoadDataMode mode, id data, BOOL isMore);
+@property (nonatomic, strong) void (^loadFailed)(CLoadDataMode mode, NSError *error);
 
 @end
 
@@ -68,11 +97,33 @@
     self.loadDataController.delegate = nil;
 }
 
-- (instancetype)initWithScrollView:(UIScrollView *)scrollView
+- (instancetype)initWithScrollView:(UIScrollView *)scrollView options:(CAutoScrollViewOptions *)options
 {
     if (self = [super init]) {
         self.scrollView = scrollView;
-        self.pageSize = 10;
+        __weak CAutoScrollView *wSelf = self;
+        if (options.getRefreshHeader) {
+            scrollView.mj_header = options.getRefreshHeader(^{
+                __strong CAutoScrollView *sSelf = wSelf;
+                [sSelf.loadDataController pullRefresh];
+            });
+            scrollView.mj_header.hidden = YES;
+        }
+        if (options.getRefreshFooter) {
+            scrollView.mj_footer = options.getRefreshFooter(^{
+                __strong CAutoScrollView *sSelf = wSelf;
+                [sSelf.loadDataController loadMore];
+            });
+            scrollView.mj_footer.hidden = YES;
+        }
+        self.pageSize = options.pageSize;
+        self.emptyText = options.emptyText;
+        self.getErrorText = options.getErrorText;
+        self.emptyDataView = options.emptyDataView;
+        self.loadData = options.loadData;
+        self.loadSuccess = options.loadSuccess;
+        self.loadFailed = options.loadFailed;
+
         [self.scrollView addSubview:self.emptyDataView];
         [self addSubview:self.scrollView];
         [self addSubview:self.activityIndicatorView];
@@ -103,14 +154,17 @@
 
     switch (mode) {
         case CLoadDataModeLoadMore:
-        self.refreshUI(mode, data, YES);
+        if (self.loadSuccess) {
+            self.loadSuccess(mode, data, YES);
+        }
         break;
 
         default:
         self.emptyDataView.hidden = length > 0;
-        self.emptyDataView.message = @"暂无数据";
-        self.scrollView.mj_footer.hidden = !self.haveMoreData;
-        self.refreshUI(mode, data, NO);
+        self.emptyDataView.message = self.emptyText;
+        if (self.loadSuccess) {
+            self.loadSuccess(mode, data, NO);
+        }
         break;
     }
 }
@@ -119,7 +173,11 @@
 {
     if (!self.loadDataController.loaded) {
         self.emptyDataView.hidden = NO;
-        self.emptyDataView.message = @"加载失败";
+        self.emptyDataView.message = self.getErrorText(error);
+    }
+
+    if (self.loadFailed) {
+        self.loadFailed(mode, error);
     }
 }
 
@@ -128,10 +186,13 @@
     switch (mode) {
         case CLoadDataModeInit:
         case CLoadDataModeRefresh:
+        self.scrollView.mj_header.hidden = NO;
+        self.scrollView.mj_footer.hidden = !self.haveMoreData;
         [self.activityIndicatorView stopAnimating];
         break;
 
         case CLoadDataModePullRefresh:
+        self.scrollView.mj_footer.hidden = !self.haveMoreData;
         [self.scrollView.mj_header endRefreshing];
         break;
 
@@ -154,37 +215,16 @@
     self.emptyDataView.frame = self.bounds;
 }
 
-#pragma mark - Public props
-
-- (void)setPullRefreshEnabled:(BOOL)pullRefreshEnabled
-{
-    _pullRefreshEnabled = pullRefreshEnabled;
-    if (pullRefreshEnabled) {
-        __weak CAutoScrollView *wSelf = self;
-        self.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-            __strong CAutoScrollView *sSelf = wSelf;
-            [sSelf.loadDataController pullRefresh];
-        }];
-    } else {
-        self.scrollView.mj_header = nil;
-    }
-}
-
-- (void)setPaginizeEnabled:(BOOL)paginizeEnabled
-{
-    _paginizeEnabled = paginizeEnabled;
-    if (paginizeEnabled) {
-        __weak CAutoScrollView *wSelf = self;
-        self.scrollView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-            __strong CAutoScrollView *sSelf = wSelf;
-            [sSelf.loadDataController loadMore];
-        }];
-    } else {
-        self.scrollView.mj_footer = nil;
-    }
-}
-
 #pragma mark - Private props
+
+- (CLoadDataController *)loadDataController
+{
+    if (!_loadDataController) {
+        _loadDataController = [CLoadDataController new];
+        _loadDataController.delegate = self;
+    }
+    return _loadDataController;
+}
 
 - (UIActivityIndicatorView *)activityIndicatorView
 {
@@ -205,15 +245,6 @@
         _emptyDataView = emptyDataView;
     }
     return _emptyDataView;
-}
-
-- (CLoadDataController *)loadDataController
-{
-    if (!_loadDataController) {
-        _loadDataController = [CLoadDataController new];
-        _loadDataController.delegate = self;
-    }
-    return _loadDataController;
 }
 
 @end

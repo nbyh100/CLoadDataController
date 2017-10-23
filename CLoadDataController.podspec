@@ -13,6 +13,5 @@ This is a long description, is longer than the short description.
   s.ios.deployment_target = '8.0'
   s.source_files = 'CLoadDataController/Classes/**/*'
   s.frameworks = 'UIKit'
-  s.dependency 'PromiseKit/Promise', '1.7.2'
   s.dependency 'MJRefresh', '3.1.12'
 end

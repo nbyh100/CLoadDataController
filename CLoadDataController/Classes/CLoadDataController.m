@@ -40,7 +40,7 @@
 
 @property (nonatomic, assign) BOOL initialized;
 @property (nonatomic, assign) BOOL loaded;
-@property (nonatomic, assign) BOOL isLoading;
+@property (nonatomic, assign) int loadingFlag;
 @property (nonatomic, assign) BOOL pageNumber;
 @property (nonatomic, strong) CLoadDataHandler *loadDataHandler;
 
@@ -53,7 +53,7 @@
     if (self = [super init]) {
         self.initialized = NO;
         self.loaded = NO;
-        self.isLoading = NO;
+        self.loadingFlag = 0;
         self.pageNumber = 1;
     }
     return self;
@@ -77,7 +77,7 @@
 
 - (void)cancel
 {
-    if (!self.isLoading) {
+    if (self.loadingFlag <= 0) {
         return;
     }
 
@@ -87,15 +87,14 @@
 - (void)_load:(CLoadDataMode)mode
 {
     [self.delegate beginLoad:mode];
-    if (self.isLoading) {
-        [self.delegate endLoad:mode];
-        return;
+    if (self.loadingFlag > 0) {
+        [self cancel];
     }
 
-    self.isLoading = YES;
+    self.loadingFlag += 1;
 
     self.loadDataHandler = [self.delegate loadData:^(id data, NSError *error, NSInteger length) {
-        self.isLoading = NO;
+        self.loadingFlag -= 1;
         self.loadDataHandler = nil;
 
         if (!error) {

@@ -44,7 +44,6 @@ typedef void (^CLoadDataCompleteBlock)(id data, NSError *error, NSInteger length
 @property (nonatomic, strong) NSString *cacheKey;
 @property (nonatomic, strong) NSString *cacheVersion;
 @property (nonatomic, assign, readonly) BOOL loaded;
-@property (nonatomic, assign, readonly) BOOL isLoading;
 
 - (void)load;
 - (void)pullRefresh;

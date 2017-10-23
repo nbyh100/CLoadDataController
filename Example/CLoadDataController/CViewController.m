@@ -8,6 +8,8 @@
 
 #import "CViewController.h"
 #import <PromiseKit/PromiseKit.h>
+#import <MJRefresh/MJRefreshNormalHeader.h>
+#import <MJRefresh/MJRefreshBackNormalFooter.h>
 #import <CLoadDataController/CAutoScrollView.h>
 
 @interface CViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -26,10 +28,14 @@
     UITableView *tableView = [UITableView new];
     tableView.delegate = self;
     tableView.dataSource = self;
-    CAutoScrollView *autoScrollView = [[CAutoScrollView alloc] initWithScrollView:tableView];
-    autoScrollView.pullRefreshEnabled = YES;
-    autoScrollView.paginizeEnabled = YES;
-    autoScrollView.loadData = ^CLoadDataHandler *(CLoadDataCompleteBlock complete, CLoadDataMode mode, int pageNumber, int pageSize) {
+    CAutoScrollViewOptions *options = [CAutoScrollViewOptions new];
+    options.getRefreshHeader = ^MJRefreshHeader *(void (^refreshingBlock)(void)) {
+        return [MJRefreshNormalHeader headerWithRefreshingBlock:refreshingBlock];
+    };
+    options.getRefreshFooter = ^MJRefreshFooter *(void (^refreshingBlock)(void)) {
+        return [MJRefreshBackStateFooter footerWithRefreshingBlock:refreshingBlock];
+    };
+    options.loadData = ^CLoadDataHandler *(CLoadDataCompleteBlock complete, CLoadDataMode mode, int pageNumber, int pageSize) {
         __block BOOL canceled = NO;
         PMKPromise *promise = [PMKPromise new:^(PMKFulfiller fulfill, PMKRejecter reject) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -60,7 +66,7 @@
             canceled = YES;
         }];
     };
-    autoScrollView.refreshUI = ^(CLoadDataMode mode, id data, BOOL isMore) {
+    options.loadSuccess = ^(CLoadDataMode mode, id data, BOOL isMore) {
         if (!isMore) {
             self.dataSource = data;
         } else {
@@ -68,6 +74,7 @@
         }
         [(UITableView *)self.autoScrollView.scrollView reloadData];
     };
+    CAutoScrollView *autoScrollView = [[CAutoScrollView alloc] initWithScrollView:tableView options:options];
     [self.view addSubview:autoScrollView];
     self.autoScrollView = autoScrollView;
 }
